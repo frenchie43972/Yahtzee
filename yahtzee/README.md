@@ -41,3 +41,6 @@ Yahtzee/
 **NOTE** I added a css file for each, but initially did not add the files as I still do not know how I will style the project. it as added here as a reference for later.
 
 3. Added the routes.js file and set up the starting routes for the different components.
+
+**NOTE** Had issues with an eslint error ERROR in Plugin "react" was conflicted between "package.json » eslint-config-react-app » \node_modules\eslint-config-react-app\base.js" and "BaseConfig 
+To fix this I had to go into the setupTests.js file and add this statement: import '@types/jest'
