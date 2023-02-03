@@ -3,7 +3,7 @@ import Dice from "./components/Dice/Dice";
 
 function App() {
   return (
-    <Dice>
+    <Dice numOfDice={5}>
       
     </Dice>
   );

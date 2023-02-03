@@ -27,7 +27,11 @@ function Dice ({numOfDice = 1}) {
             {/* Maps over dice and creates a "Die" for each item in the array */}
             {/* The die argument stores the current value and the index argument provides the current index */}
             {dice.map((die, index) => (
-                <button key={index} > Die {index + 1}: {die} </button>
+                <button key={index} > 
+                    {[...Array(die)].map((number, i) => (
+                        <div key={i} className="number" />
+                    ))} 
+                </button>
             ))}
             {/* generateDice is passed as a click handler for the button */}
             <button onClick={generateDice}>Roll</button>
